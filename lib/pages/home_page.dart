@@ -17,6 +17,7 @@ class _HomePageState extends State<HomePage> {
 
   final TextEditingController _controller = TextEditingController();
 
+  // Loads data from local storage
   @override
   void initState() {
     // if this is the first time ever opening the app, create default data
@@ -29,6 +30,7 @@ class _HomePageState extends State<HomePage> {
     super.initState();
   }
 
+  // Saves new task to local storage
   void saveNewTask() {
     setState(() {
       db.todoList.add([_controller.text, false]);
@@ -39,6 +41,7 @@ class _HomePageState extends State<HomePage> {
     Navigator.of(context).pop();
   }
 
+  // Checks or unchecks task box
   void checkboxChanged(bool? value, int index) {
     setState(() {
       db.todoList[index][1] = !db.todoList[index][1];
@@ -47,6 +50,7 @@ class _HomePageState extends State<HomePage> {
     db.updateDatabase();
   }
 
+  // Creates new task dialog
   void createNewTask() {
     showDialog(
       context: context,
@@ -60,6 +64,7 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
+  // Deletes a task from the local storage
   void deleteTask(int index) {
     setState(() {
       db.todoList.removeAt(index);
