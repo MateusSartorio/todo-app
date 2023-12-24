@@ -25,12 +25,15 @@ class CreateTaskDialogBox extends StatelessWidget {
             TextField(
               controller: controller,
               decoration: const InputDecoration(
-                  border: OutlineInputBorder(), hintText: "Add a new task"),
+                  border: InputBorder.none, hintText: "Add a new task"),
             ),
             Row(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 MyButton(text: "Save", onPressed: onSave),
-                const SizedBox(width: 4),
+                SizedBox(
+                  width: 10,
+                ),
                 MyButton(text: "Cancel", onPressed: onCancel)
               ],
             )
