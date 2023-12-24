@@ -1,3 +1,11 @@
+# Todos App
+
+A simple todos app made with Flutter.
+
+It persists data using the device's local storage and is able to adjust for light and dark theme of the device automatically.
+
+To delete a todo, simply slide it to the the left.
+
 <div align="center">
   <h2 align="center">Light Theme</h2>
   <img src="assets/images/Screenshot 2023-12-24 141728.png" alt="" width="30%"/>
