@@ -19,3 +19,22 @@ To delete a todo, simply slide it to the the left.
   <img src="assets/images/Screenshot 2023-12-24 140604.png" alt="" width="30%"/>
   <img src="assets/images/Screenshot 2023-12-24 142026.png" alt="" width="30%"/>
 </div>
+
+## How to run it locally
+
+Have Flutter and Dart installed. More info on how to install Flutter [here](https://docs.flutter.dev/get-started/install).
+Have Android SDK installed. More info on how to install Android Studio and SDK [here](https://developer.android.com/studio/install).
+
+If you have all dependencies, clone this repository:
+
+```bash
+git clone https://github.com/mateus-sartorio/todo_app
+```
+
+Initialize the android emulator, and then run inside the project root folder:
+
+```bash
+flutter run
+```
+
+It should start up the app on the android emulator.
