@@ -71,7 +71,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("TODO")),
+      appBar: AppBar(title: const Text("TODOS"), centerTitle: true),
       floatingActionButton: FloatingActionButton(
         onPressed: createNewTask,
         child: const Icon(Icons.add),
