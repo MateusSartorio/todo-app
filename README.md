@@ -31,7 +31,7 @@ If you have all dependencies, clone this repository:
 git clone https://github.com/mateus-sartorio/todo_app
 ```
 
-Initialize the android emulator, and then run inside the project root folder:
+Start the android emulator, and then run inside the project root folder:
 
 ```bash
 flutter run
