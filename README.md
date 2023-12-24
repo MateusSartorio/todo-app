@@ -4,7 +4,7 @@ A simple todos app made with Flutter.
 
 It persists data using the device's local storage and is able to adjust for light and dark theme of the device automatically.
 
-To delete a todo, simply slide it to the the left.
+To delete a task, simply slide it to the the left.
 
 <div align="center">
   <h2 align="center">Light Theme</h2>
